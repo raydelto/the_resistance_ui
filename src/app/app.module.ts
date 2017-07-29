@@ -20,6 +20,9 @@ import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { LobbyPage } from '../pages/lobby/lobby';
+import { CreateGamePage } from '../pages/create-game/create-game';
+import { GameListPage } from '../pages/game-list/game-list';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -71,7 +74,10 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    LobbyPage,
+    CreateGamePage,
+    GameListPage        
   ],
   imports: [
     BrowserModule,
@@ -102,7 +108,10 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    LobbyPage,
+    CreateGamePage,
+    GameListPage 
   ],
   providers: [
     Api,

@@ -1,0 +1,15 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="title">The Resistance</div>
+  </div>
+  <div padding>
+    <ion-list>
+      <ion-list-header>Games List</ion-list-header>
+      <ion-item *ngFor="let item of gameList">        
+      <button ion-button block (click)="signup()" class="signup">{{ item }}</button>        
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
