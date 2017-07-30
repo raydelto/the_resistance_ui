@@ -1,0 +1,22 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="title">The Resistance</div>
+  </div>
+  <div padding>
+    <ion-list>
+      <ion-list-header>Participants</ion-list-header>
+      <ion-item *ngFor="let player of playerList">
+        {{ player }}
+      </ion-item>
+    </ion-list>
+    <button *ngIf="isOrganizer() && enoughPlayers()" ion-button block (click)="signup()">Start the game</button>
+    <div class="information-box" *ngIf="!enoughPlayers()">
+      At least five players are needed in order to start the game
+    </div>
+    <div class="information-box" *ngIf="enoughPlayers() && !isOrganizer()">
+      Waiting for the game creator to start the game ...
+    </div>
+  </div>
+</ion-content>

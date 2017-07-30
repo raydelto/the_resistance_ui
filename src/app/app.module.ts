@@ -23,6 +23,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { LobbyPage } from '../pages/lobby/lobby';
 import { CreateGamePage } from '../pages/create-game/create-game';
 import { GameListPage } from '../pages/game-list/game-list';
+import { GameStartPage } from '../pages/game-start/game-start';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -77,7 +78,8 @@ export function provideSettings(storage: Storage) {
     WelcomePage,
     LobbyPage,
     CreateGamePage,
-    GameListPage        
+    GameListPage,
+    GameStartPage
   ],
   imports: [
     BrowserModule,
@@ -111,7 +113,8 @@ export function provideSettings(storage: Storage) {
     WelcomePage,
     LobbyPage,
     CreateGamePage,
-    GameListPage 
+    GameListPage,
+    GameStartPage
   ],
   providers: [
     Api,
