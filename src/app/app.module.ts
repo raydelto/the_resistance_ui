@@ -25,6 +25,7 @@ import { CreateGamePage } from '../pages/create-game/create-game';
 import { GameListPage } from '../pages/game-list/game-list';
 import { GameStartPage } from '../pages/game-start/game-start';
 import { RoleAssignPage } from '../pages/role-assign/role-assign';
+import { DashBoardPage } from '../pages/dashboard/dashboard';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -81,7 +82,8 @@ export function provideSettings(storage: Storage) {
     CreateGamePage,
     GameListPage,
     GameStartPage,
-    RoleAssignPage
+    RoleAssignPage,
+    DashBoardPage    
   ],
   imports: [
     BrowserModule,
@@ -117,7 +119,8 @@ export function provideSettings(storage: Storage) {
     CreateGamePage,
     GameListPage,
     GameStartPage,
-    RoleAssignPage
+    RoleAssignPage,
+    DashBoardPage    
   ],
   providers: [
     Api,

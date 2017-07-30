@@ -1,0 +1,14 @@
+<ion-content scroll="true">
+  <div class="information-box">
+    There are {{ spies }} spies among {{ players }} players
+  </div>
+  <ion-list>
+    <ion-list-header>Missions List</ion-list-header>
+    <ion-item *ngFor="let mission of missions">
+      <div [ngClass]="{'current-mission': mission.number === currentMission }">
+        Mission {{ mission.number }} <span class="emphasize">( {{ players}} players )</span>
+        <span class="mission-won" *ngIf="mission.won">Mission won by {{ mission.won }}</span>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

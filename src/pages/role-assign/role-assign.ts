@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { DashBoardPage } from '../dashboard/dashboard';
 
 @Component({
   selector: 'role-assign',
@@ -12,7 +13,7 @@ export class RoleAssignPage {
   }
 
   start(){
-    
+    this.navCtrl.push(DashBoardPage);
   }
 
 }
