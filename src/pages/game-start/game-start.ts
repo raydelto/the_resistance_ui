@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { CreateGamePage } from '../create-game/create-game';
+import { RoleAssignPage } from '../role-assign/role-assign';
 
 @Component({
   selector: 'game-start',
@@ -13,8 +13,8 @@ export class GameStartPage {
 
   }
 
-  createGame(){
-    this.navCtrl.push(CreateGamePage);
+  start(){
+    this.navCtrl.push(RoleAssignPage);
   }
 
   isOrganizer(){
